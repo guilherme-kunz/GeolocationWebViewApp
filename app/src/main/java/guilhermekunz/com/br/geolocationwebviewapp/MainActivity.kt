@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         }
-        binding.webView.webChromeClient = object : WebChromeClient() {
+        myWebView.webChromeClient = object : WebChromeClient() {
             override fun onGeolocationPermissionsShowPrompt(
                 origin: String?,
                 callback: GeolocationPermissions.Callback?
